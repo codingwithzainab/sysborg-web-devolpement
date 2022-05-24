@@ -207,8 +207,8 @@ p{
     margin: 1.0625rem auto;  
 }
 
-/* arrival design */
-/* .new-arrivals .bannar-info{
+/* arrival design  */
+ .new-arrivals .bannar-info{
     bottom:0px;
     margin: auto;
     width: 100%;
@@ -222,9 +222,9 @@ p{
 .new-arrivals .card-bannar:nth-child(2)p,
 .new-arrivals .card-bannar:nth-child(2)a{
     color: var(--black-color);
-} */
+}
 
-/* .new-arrivals .card-bannar:nth-child(2)a::before,
+.new-arrivals .card-bannar:nth-child(2)a::before,
 .new-arrivals .card-bannar:nth-child(2) a::after{
     background-color: var(--black-color);
 }
@@ -243,4 +243,58 @@ p{
 .products .item-product img:hover{
     transform: scale(1.2);
     opacity: 0.6;
-} */
+}
+
+/* products design */
+.products .wrapper{
+    background-color: var(--black-color);
+}
+.products .nav-tabs{
+    border: 0;
+    justify-content: center;
+}
+.products .nav-tabs .nav-link{
+    display: block;
+    padding: 0 30px;
+    border: 1px solid var(--white-color);
+    border-radius: 20px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    height: 36px;
+    margin: 10px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.products .product-info .cat-parent,
+.products .product-info .wishlist i{
+    font-size: 0.875rem;
+    color: var(--white-color);
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.products .product-title a{
+    margin: 0 0 7px;
+    display: block;
+    color: var(--white-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.products .rating i{
+    color: yellow;
+
+}
+.basket a i{
+    color: var(--white-color);
+}
+
+/* deal off the day */
+.deal-of-the-day{
+    background-image:url(images/download.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
