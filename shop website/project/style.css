@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300;1,500&family=Questrial&display=swap');
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+a:hover{
+    color:var(--primary-color) !important ;
+}
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+/* variables define */
+:root{
+    --primary-color : #ff553e;
+    --secondry-color:#333;
+    --white-color:#fff;
+    --black-color:#000;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 100%;
+    font-weight: 400;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* custom scrool bar */
+
+::-webkit-scrollbar{
+    width: 0.3125rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+/* custom css design */
+
+h1{
+    font-size:3rem ;
+    font-weight:400 ;
+    text-transform:uppercase ;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+h2{
+    font-size:1.5625rem ;
+    font-weight:600 ;
+    text-transform:capitalize ;
+    color: var(--white-color);
+    line-height: 2.5rem;
+
+}
+h4{
+     font-size:1.125rem ;
+    font-weight:400 ;
+    text-transform:capitalize ;
+    color: var(--white-color);
+    margin-bottom: 0.9375rem;
+    transition:all.3s linear ;
+}
+h5{
+
+ font-size:0.875rem ;
+    font-weight:400 ;
+    text-transform:capitalize ;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+p{
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 0.0625rem;
+    opacity: 0.8;
+}
+.main-btn{
+    height: 40px;
+    font-size: 1.125rem;
+    line-height: 40px;
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 30px;
+    position: relative;
+}
+
+.main-btn::after,
+.main-btn::before{
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255,255,255,.3);
+    left: 0;
+    height: 1px;
+    width: 100%;
+    content: "";
+    transition: all .5s ease-out 0s;
+    -webkit-transition: all .5s ease-out 0s;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+}
+.main-btn::after{
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+}
+.main-btn:hover::after{
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    background-color: var(--primary-color);
+}
+.main-btn:hover{
+    color: var(--primary-color);
+}
+
+.wrapper{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: var(--secondry-color);
+}
+.text-content{
+    width: 60%;
+    margin: auto;
+}
+
+/* header design */
+.top-header{
+    background-color: var(--secondry-color);
+}
+.top-header span{
+    font-size: 0.875rem;
+    color: var(--white-color);
+    letter-spacing: 0.1062rem;
+}
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+   
+}
+.navigation-wrap .nav-item{
+    padding: 0 0.5rem;
+     transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+    border: none;
+    box-shadow: none;
+    outline: unset;
+}
+.navigation-wrap .nav-link{
+    padding-top: 0.9375;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--white-color);
+    letter-spacing: 0.0625rem;
+}
+.navigation-wrap .nav-link:hover,
+.navigation-wrap .nav-link.active{
+    color: var(--primary-color);
+}
+
+.navigation-wrap .scroll-on{
+    position: fixed;
+    background-color: var(--black-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0.125rem 1.75rem 1 rgb(0,0,0,0.09);
+    transition: all .15s ease-in-out 0s;
+}
+.navigation-wrap .scroll-on .nav-link:hover,
+.navigation-wrap .scroll-on .nav-link.active{
+    color: var(--primary-color);
+}
+#home .carousel-caption{
+    top: 12rem;
+   
+}
+#home .carousel-caption p{
+    max-width: 350px;
+    margin: 1.0625rem auto;  
+}
+
+/* arrival design */
+/* .new-arrivals .bannar-info{
+    bottom:0px;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    padding: 0 15px;
+    
+}
+
+.new-arrivals .card-bannar:nth-child(2)h2,
+.new-arrivals .card-bannar:nth-child(2)p,
+.new-arrivals .card-bannar:nth-child(2)a{
+    color: var(--black-color);
+} */
+
+/* .new-arrivals .card-bannar:nth-child(2)a::before,
+.new-arrivals .card-bannar:nth-child(2) a::after{
+    background-color: var(--black-color);
+}
+
+.new-arrivals .card-bannar .card-thumb,
+.products .item-product{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.new-arrivals .card-bannar .card-thumb img,
+.products .item-product img{
+    transition: all .5s ease-out 0s;
+}
+.new-arrivals .card-bannar .card-thumb img:hover,
+.products .item-product img:hover{
+    transform: scale(1.2);
+    opacity: 0.6;
+} */
